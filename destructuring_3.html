@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //array
+
+        let arr = [10, 20, 30, 40]
+
+        function teste([ a, , , b, c = 100 ]) {
+            console.log(a, b, c)
+        }
+
+        teste(arr)
+
+        //objeto
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function teste({ a, b, e = 100 }) {
+            console.log(a, b, e)
+        }
+
+        teste(obj)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
